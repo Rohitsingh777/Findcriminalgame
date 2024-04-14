@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+    --tw-bg-opacity: 1;
+    background-color: rgb(120 113 108 / var(--tw-bg-opacity));
+}
+.SPANCHAR{
+    font-size: 5vw;
+
+}
+.SPANCHAR:hover::after{
+    transform: rotate(20deg); 
+    content: '水';
+    color : red;
+}
+
+.Onecity{
+    margin-top: 3px ;
+    transition: transform 0.3s; 
+}
+
+.Onecity:hover{
+    transform: scale(0.9);
+}
+.onecdop::before{
+    opacity: 0.4;
+}
