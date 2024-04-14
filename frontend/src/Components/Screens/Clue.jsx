@@ -12,7 +12,7 @@ export default function Cluescreen() {
 
   return (
     <div className="sm:h-3/4 sm:w-3/4 bg-red-400 justify-center items-center flex h-5/6 w-full">
-      <div className=" font-mono w-3/4 h-3/4 " style={{backgroundImage : `url(${Criminal})`, backgroundSize: 'cover', }}>
+      <div className=" font-mono w-3/4 h-3/4 bg-cover bg-center" style={{backgroundImage : `url(${Criminal})`, backgroundSize: 'cover', }}>
         <div className=" bg-slate-400 text-black"> # The criminal sent a note for you</div>
         <div className= " text-gray-500 bg-white sm:mt-7 mt-3 h-1/3 font-serif opacity-60">Hello 
         Mr Whoever, its me again .Gotta get outta this town. <span className=" text-red-500">{clue}</span></div>

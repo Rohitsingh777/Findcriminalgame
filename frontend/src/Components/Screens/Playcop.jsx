@@ -22,7 +22,7 @@ export default function Copplayscreen(){
     }
     
     return(
-        <div className=" w-screen sm:h-screen h-3/4 bg-blue-500 bg-cover opacity-85 backdrop-blur-2xl onecop" style={{ backgroundImage: `url(${copimg})`}}>
+        <div className=" w-screen sm:h-screen h-3/4 bg-blue-500 bg-cover opacity-85 backdrop-blur-2xl bg-center onecop" style={{ backgroundImage: `url(${copimg})`}}>
         
         <div className=' w-full sm:h-1/4  h-16 flex justify-center items-center align-middle mb-3'>
         <h1 className=' font-serif sm:text-6xl text-lg font-bold text-yellow-300' >{name}</h1>
