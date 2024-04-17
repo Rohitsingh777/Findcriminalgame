@@ -14,26 +14,25 @@ export default function Cityscreen() {
     const [cities , usecities] = useRecoilState(Locationsstate)
 
   return (
-   <div className=" align-middle justify-center flex flex-wrap h-3/4 w-3/4 items-center ">
-    <div className="w-full flex align-middle justify-center bg-red-400 text-black">Possible cities </div>
-    <div className="h-full w-full bg-red-400 justify-center items-center flex ">
-      <div className=" w-full h-full bg-emerald-400 sm:flex sm:flex-wrap gap-y-1  sm:gap-y-0 "> 
+   <div className=" align-middle justify-center sm:min-h-96 sm:w-3/4 items-center w-full ">
+    <div className="w-full flex font-bold align-middle justify-center mb-2 mt-2 text-black">Possible cities </div>
+
+    <div className="h-full w-full  justify-center items-center flex ">
+      <div className=" w-full min-h-full sm:flex sm:flex-wrap gap-y-1  sm:gap-y-0 "> 
         <City name="Lihaspur" desc={JSON.stringify(cities.Lihaspur?.Description)}  dis={JSON.stringify(cities.Lihaspur?.Distance)} img={Lihaspur} />
         <City name="NarmisCity " desc={JSON.stringify(cities.NarmisCity?.Description)}  dis={JSON.stringify(cities.NarmisCity?.Distance)} img={Narmis} />
         <City name="Nuravgram" desc={JSON.stringify(cities.Nuravgram?.Description)} dis={JSON.stringify(cities.Nuravgram?.Distance)} img={Nuravgram} />
         <City name="Shekharvati" desc={JSON.stringify(cities.Shekharvati?.Description)} dis={JSON.stringify(cities.Shekharvati?.Distance)} img={Shekharvati} />
         <City name="Yapkashnagar" desc={JSON.stringify(cities.Yapkashnagar?.Description)} dis={JSON.stringify(cities.Yapkashnagar?.Distance)}  img={Yapkashnagar} />
-
-        <div  className=" mt-9 ml-6 bg-black text-red-600 hover:text-green-600 flex-grow flex justify-center items-center rounded-3xl"
+      </div>
+    </div>
+    <div  className=" mt-5 ml-6 bg-black text-red-600  animate-bounce  hover:text-green-600  h-10 flex-grow flex justify-center items-center rounded-3xl"
             onClick={() => {
                 toast.info("LETS MEET COP! ");
               navigate("/play");
             }}>
               Lets Meet our Cops 
         </div>
-
-      </div>
-    </div>
     </div>
   );
 }

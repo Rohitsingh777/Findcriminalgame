@@ -4,7 +4,7 @@ export default function Introscreen() {
   const navigate = useNavigate();
 
   return (
-    <div className="h-3/4 w-3/4 bg-red-400 justify-center items-center flex sm:bg-green-500">
+    <div className="h-3/4 w-3/4 bg-red-400 justify-center items-center flex sm:bg-green-500 ">
 
       <div className=" font-mono">
         <div> # In this game You are supposed to catch a criminal  </div>

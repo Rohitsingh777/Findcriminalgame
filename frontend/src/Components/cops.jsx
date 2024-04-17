@@ -1,10 +1,4 @@
 
-
-
-
-
-
-
 export default function Cop(props){
 
 
