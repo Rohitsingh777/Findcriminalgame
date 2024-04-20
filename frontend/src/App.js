@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import axios from 'axios';
 import Main from "./Components/Main";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
@@ -14,14 +14,16 @@ import Selectcity from "./Components/Screens/Selectcity";
 import Selectvehicle from "./Components/Screens/Selectvehicle";
 import Findcriminal from "./Components/Screens/Traveltime";
 import Winnerscreen from "./Components/Screens/Winner";
-import TSelectvehicle from "./Components/Screens/Tselectv";
-import TSelectcity from "./Components/Screens/Tselectcity";
+import Nuravgram from "./Images/bg/gamebg.jpeg";
 
 function App() {
+ 
+
   
   return (
     <RecoilRoot>
-    <div className="  w-scree min-h-screen bg-stone-500 flex justify-center align-middle items-center"> 
+    <div className="  w-scree min-h-screen bg-black flex justify-center align-middle items-center bg-center bg-cover" 
+      style={{ backgroundImage: `url(${Nuravgram})`}}>
     <Main/>
     <Router>
     <Routes>
@@ -34,8 +36,7 @@ function App() {
     <Route path={"/selectvehicle"} element={<Selectvehicle/>} />
     <Route path={"/travel"} element={<Findcriminal/>} />
     <Route path={"/winner"} element={<Winnerscreen/>} />
-    <Route path={"/Tsel"} element={<TSelectcity/>} />
-
+    
     </Routes>
    
   </Router>

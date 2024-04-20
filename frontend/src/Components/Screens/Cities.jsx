@@ -15,7 +15,7 @@ export default function Cityscreen() {
 
   return (
    <div className=" align-middle justify-center sm:min-h-96 sm:w-3/4 items-center w-full ">
-    <div className="w-full flex font-bold align-middle justify-center mb-2 mt-2 text-black">Possible cities </div>
+    <div className="w-full flex font-bold align-middle justify-center mb-2 mt-2 text-white underline uppercase  bg-red-600 "> Possible cities </div>
 
     <div className="h-full w-full  justify-center items-center flex ">
       <div className=" w-full min-h-full sm:flex sm:flex-wrap gap-y-1  sm:gap-y-0 "> 
@@ -26,7 +26,7 @@ export default function Cityscreen() {
         <City name="Yapkashnagar" desc={JSON.stringify(cities.Yapkashnagar?.Description)} dis={JSON.stringify(cities.Yapkashnagar?.Distance)}  img={Yapkashnagar} />
       </div>
     </div>
-    <div  className=" mt-5 ml-6 bg-black text-red-600  animate-bounce  hover:text-green-600  h-10 flex-grow flex justify-center items-center rounded-3xl"
+    <div  className=" mt-5 ml-6  bg-red-600 text-black  animate-bounce  hover:text-green-600  h-10 flex-grow flex justify-center items-center rounded-3xl"
             onClick={() => {
                 toast.info("LETS MEET COP! ");
               navigate("/play");

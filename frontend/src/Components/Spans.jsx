@@ -4,7 +4,7 @@ export default function Spans(props) {
     const ARR =  props.text.split('') ; 
     console.log(ARR)
     return (
-        <div>
+        <div className=" w-full justify-center  flex item-center ">
             {ARR.map((char , index )=>{
                 if (char === ' '){
                     return (
@@ -12,7 +12,7 @@ export default function Spans(props) {
                     )
                 }
                 return (
-                    <span key={index} className=" text-zinc-700  hover:text-red-600 text-pretty font-serif font-extrabold inline-block  SPANCHAR" style={{hover: 'color:red'}}>{char}</span>
+                    <span key={index} className=" text-black  hover:text-red-600 text-pretty font-serif font-extrabold inline-block   SPANCHAR" style={{hover: 'color:red'}}>{char}</span>
                 )
             })}
         </div>

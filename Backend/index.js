@@ -19,7 +19,7 @@ const vehicles = {
     "EV SUV" : {Range : 120 , Count : 1},
 }
 const Cities = ['Yapkashnagar','Lihaspur','NarmisCity','Shekharvati','Nuravgram']
-const Clues = ['I like to race','Can yount see me','I am a capitalist','I hide in diamonds','I am with Terminator']
+const Clues = ['I like to race','Can you see me','I am a capitalist','I hide in diamonds','I am with Terminator']
 
 
 app.get('/', (req, res) => {

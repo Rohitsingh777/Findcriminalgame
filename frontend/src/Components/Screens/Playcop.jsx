@@ -22,7 +22,7 @@ export default function Copplayscreen(){
     }
     
     return(
-        <div className=" w-screen h-screen  bg-blue-500 bg-cover opacity-85 backdrop-blur-2xl bg-center onecop" style={{ backgroundImage: `url(${copimg})`}}>
+        <div className=" w-screen h-screen  bg-blue-500 bg-cover opacity-100 backdrop-blur-2xl bg-center onecop" style={{ backgroundImage: `url(${copimg})`}}>
         
         <div className=' w-full sm:h-1/4  h-16 flex justify-center items-center align-middle mb-3'>
         <h1 className=' font-serif sm:text-6xl text-lg font-bold text-yellow-300 bg-black' >{name}</h1>
@@ -32,7 +32,7 @@ export default function Copplayscreen(){
         <div className=' w-full sm:h-1/4 h-3  flex justify-center items-center opacity-85'>
         <h1 className=' font-serif sm:text-3xl font-bold text-red-600 sm:w-1/2 w-full bg-slate-400' >My name is 
        <span className=' text-black '> {name} </span> 
-        .I have volunteered in capturing the fugitive hiding and I need your help </h1>
+        .I have volunteered in capturing the fugitive hiding and I need your help </h1> 
         </div>
         
         <div className=' w-full h-1/4 flex justify-center items-center opacity-85'>
@@ -40,7 +40,7 @@ export default function Copplayscreen(){
         </div>
 
 
-        <div className=' w-full h-1/3 flex justify-center items-center opacity-85'>
+        <div className=' w-full  flex justify-center items-center opacity-85'>
         <div  className=" animate-bounce mt-9 ml-6 mr-6 bg-yellow-300 text-red-600 hover:text-green-600 flex justify-center items-center rounded-4xl  w-full  h-8 sm:text-2xl  hover:font-bold hover:bg-white"
             onClick={() => {
             toast.info("CHOOSE A CITY TO GO TO");
